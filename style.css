@@ -5,7 +5,8 @@
 }
 
 body {
-
+  font-family: 'Open Sans', sans-serif;
+  margin: 0px;
 }
 
 .user-img {
@@ -15,6 +16,10 @@ body {
   border-radius: 50%;
 }
 
+label {
+  color: #9ba6b8;
+}
+
 .icon {
   width: 14px;
   margin-right: 6px;
@@ -22,8 +27,23 @@ body {
   top: 2px;
 }
 
-main {
-  margin-left: 160px;
+ul {
+  padding: 0;
+}
+
+h5 {
+  color: #536073;
+  padding: 0;
+  margin: 0;
+}
+
+h4 {
+  color: #9ba6b8;
+  display: inline;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 75%;
 }
 
 li {
@@ -31,41 +51,103 @@ li {
   margin: 16px 18px;
 }
 
-ul {
-  padding: 0;
-}
-
 .side-nav {
   height: 100%;
   z-index: 1;
   top: 0;
   left: 0;
-  width: 160px;
   display: inline-block;
   float: left;
-  background-color: grey;
+  background-color: #354051;
   overflow: hidden;
 }
 
 .user-nav,
 .main-nav,
 .admin-nav {
-  border-bottom: solid 1px 
+  border-bottom: solid 2px #2f384b;
 }
 
 .user-nav {
-  padding: 18px 24px;
+  padding: 20px 30px;
 }
 
 .arrow {
   margin-right: 0px;
   position: relative;
- /*top: 3px;*/
-  left: px;
+  left: 4px;
 }
 
-ul {
-  margin: 8px, 10px;
+i {
+  border-bottom: 1px solid #E7E7E7;
+  border-left: 1px solid #E7E7E7;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+i img {
+  margin-top: 16px;
+}
+
+.search-input-row {
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr 1fr 1fr
+}
+
+i input {
+  width: 100%;
+  border-style: none;
+  font-size: 16px;
+  padding-left: 14px;
+}
+
+.tiny {
+  position: relative;
+  top: -4px;
+  left: 7px;
+  width: 10px;
+}
+
+.big {
+  width: 24px;
+}
+
+.title-box {
+  margin: 30px 26px;
+  display: inline-block;
+}
+
+h1 {
+  color: #717175;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+sub a {
+  color: #90d0f1;
+}
+
+header {
+  color: #8a8d99;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px;
+}
+
+.title-buttons button {
+  border-radius: 100%;
+}
+
+.header-nav {
+  /*display: flex;*/
 }
 
 .header-nav li {
@@ -74,8 +156,8 @@ ul {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 160px auto 300px;
-  grid-template-rows: 180px 260px auto
+  grid-template-columns: 180px auto 300px;
+  grid-template-rows: 210px 350px auto
 }
 
 .grid-item1 {
@@ -87,9 +169,12 @@ ul {
   grid-column-end: 4;
 }
 
+
 .grid-item3 {
   grid-column-start: 2;
   grid-column-end: 4;
+  display: flex;
+
 }
 
 .grid-item4 {}
