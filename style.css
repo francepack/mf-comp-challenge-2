@@ -111,7 +111,6 @@ li {
   
 }
 
-
 a {
   color: inherit;
   text-decoration: none;
@@ -140,6 +139,69 @@ a {
 .main-nav,
 .admin-nav {
   border-bottom: solid 2px #2f384b;
+}
+
+.check-container {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.check-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.check-box {
+  position: absolute;
+  top: 1px;
+  left: 0px;
+  height: 13px;
+  width: 13px;
+}
+
+.check1 {
+  background-color: #fae203;
+}
+
+.check2 {
+  background-color: #2ab0fb;
+}
+
+.check3 {
+  background-color: #e11b5f;
+}
+
+.check4 {
+  background-color: #00ad89;
+}
+
+.check-container:hover input ~ .check-box {
+  background-color: #eff1f2;
+}
+
+.check-box:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.check-container input:checked ~ .check-box:after {
+  display: block;
+}
+
+.check-container .check-box:after {
+  left: 4px;
+  top: 1px;
+  width: 5px;
+  height: 10px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .top-box {
@@ -241,16 +303,21 @@ header {
 }
 
 .dot {
-  position: relative;
-  left: 7px;
-  width: 12px;
+  margin-right: 5px;
 }
 
 .long {
   border-radius: 25px;
-  width: 70px;
+  width: 80px;
   height: 30px;
   margin-right: 10px;
+  color: #717175;
+  font-weight: 600;
+}
+
+.title-buttons span {
+  position: relative;
+  bottom: 1px;
 }
 
 .title-buttons button:hover {
@@ -319,9 +386,25 @@ header {
   border-radius: 25px;
   color: #8a8d99;
   font-weight: 800;
-  margin-top: 10px;
   height: 30px;
   width: 220px;
+}
+
+.display-top-btn {
+  display: flex;
+  position: absolute;
+  top: 83.5%;
+  left: 50%;
+  width: 0;
+}
+
+.display-top-btn:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  border-bottom: solid #dce1e6 1px;
+  padding: 10px;
 }
 
 .figures button:hover {
@@ -333,13 +416,21 @@ header {
 table {
   background-color: #FFFFFF;
   color: #9fa9b3;
-  margin: 10px 40px;
-
+  margin: 40px;
 }
 
 .table-top-row {
   background-color: #6e7e95;
   color: #e3eef2;
+}
+
+.center-th {
+  vertical-align: middle;
+  padding-bottom: 20px;
+}
+
+.table-top-row td {
+  padding-bottom: 20px;
 }
 
 .edit-btn {
@@ -367,24 +458,28 @@ td button span {
 }
 
 table th {
-  border: none;
   width: 150px;
   text-transform: uppercase;
   font-size: 75%;
-  padding: 20px 0px 20px 16px;
+  padding: 20px 0px 0px 16px;
   text-align: left; 
   font-weight: 700;
   vertical-align: top;
 }
 
 .th-adjust {
-  vertical-align: middle;
+  position: relative;
+  top: 7px;
 }
 
 table td {
   font-size: 75%;
-  padding: 20px;
   font-weight: 600;
+  padding: 20px 16px 0px 0px;
+}
+
+table {
+  margin-bottom: 40px;
 }
 
 .hire-img {
@@ -401,6 +496,10 @@ table td {
 
 .salary {
   font-weight: 800;
+}
+
+.table-bot {
+  padding-bottom: 30px;
 }
 
 .social-btn {
@@ -421,11 +520,13 @@ table td {
 }
 
 .facebook {
+  margin-top: 40px;
   background-color: #3f51b5;
   color: #d6eefb;
 }
 
 .aside-nav span {
+  font-weight: 600;
   position: relative;
   bottom: 1px;
 }
@@ -453,9 +554,26 @@ table td {
   width: 90%;
 }
 
-.border-bot {
+.table-border:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 100%;
   border-bottom: solid #dce1e6 1px;
+  padding: 10px;
 }
+
+.border-adjust-fat:after {
+  padding: 27px;
+}
+
+.border-adjust-slight:after {
+  padding: 15px;
+}
+
+/*.border-bot {
+  border-bottom: solid #dce1e6 1px;
+}*/
 
 .aside-head {
   color: #747c87;
