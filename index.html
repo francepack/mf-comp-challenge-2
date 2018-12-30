@@ -41,7 +41,7 @@
       </section>
       <section class="main-nav">
         <ul>
-          <li>
+          <li class="list-head">
             <h5>Main</h5>
           </li>
           <a href="https://placeholder.com/">
@@ -78,7 +78,7 @@
       </section>
       <section class="admin-nav">
         <ul>
-          <li>
+          <li class="list-head">
             <h5>Admin</h5>
           </li>
           <a href="https://placeholder.com/">
@@ -115,7 +115,7 @@
       </section>
       <section class="categories-nav">
         <ul>
-          <li>
+          <li class="list-head">
             <h5>Categories</h5>
           </li>
           <li>
@@ -293,15 +293,17 @@
           <th class="table-border">Status</th>
           <td class="table-border">Open</td>
         </tr>
-        <tr>
-          <th class="table-border border-adjust-fat">
+        <tr class="big-tr">
+          <th class="table-border border-adjust-big">
             Description
           </th>
-          <td class="table-border">The Customer Service Representative is responsible for interacting with and providing quality assistance to all radical customers, responsible for keeping up-to-date on the various product shizzle, helping the bidness reduce customer service wait times while doing a backhand spring and eating a ham sandwich.
+          <td class="table-border">
+            <p>The Customer Service Representative is responsible for interacting with and providing quality assistance to all radical customers, responsible for keeping up-to-date on the various product shizzle, helping the bidness reduce customer service wait times while doing a backhand spring and eating a ham sandwich.
+            </p>
           </td>
         </tr>
         <tr>
-          <th class="th-adjust table-border border-adjust-slight">
+          <th class="th-adjust table-border border-adjust-small">
             Hiring Lead
           </th>
           <td class="table-border">
@@ -318,49 +320,53 @@
       </table>
     </div>
     <aside class="aside-nav">
-      <a href="https://www.facebook.com/">
+      <div class="social-box">
         <button class="facebook social-btn">
-          <img src="https://img.icons8.com/color/32/000000/facebook.png" class="icon tall">
-          <span>Post to Facebook</span>
+          <a href="https://www.facebook.com/">
+            <img src="https://img.icons8.com/color/32/000000/facebook.png" class="icon tall">
+            <span>Post to Facebook</span>
+          </a>
         </button>
-      </a>
-      <a href="https://www.twitter.com">
         <button class="twitter social-btn">
-          <img src="https://img.icons8.com/ios/32/d6eefb/twitter-filled.png" class="icon">
-          <span>Tweet this Job</span>
+          <a href="https://www.twitter.com">
+            <img src="https://img.icons8.com/ios/32/d6eefb/twitter-filled.png" class="icon">
+            <span>Tweet this Job</span>
+          </a>
         </button>
-      </a>
-      <a href="https://www.linkedin.com">
         <button class="linkedin social-btn">
-          <img src="https://img.icons8.com/ios/32/d6eefb/linkedin-filled.png" class="icon">
-          <span>Post to Linkedin</span>
+          <a href="https://www.linkedin.com">
+            <img src="https://img.icons8.com/ios/32/d6eefb/linkedin-filled.png" class="icon">
+            <span>Post to Linkedin</span>
+          </a>
         </button>
-      </a>
-      <div class="aside-field border-bot">
-        <h3 class="aside-head">
-          <img src="https://img.icons8.com/small/32/747c87/globe.png" class="icon">Link to this Job
-        </h3>
-        <p>Lorem ipsum dolor sit arnet, consectetur adipis cing elit. Integer mollis neque eget vestibpend.
-        </p>
-        <input type="text" name="name" class="link-input" placeholder="www.getmeajobrightmeow.com">
-        <button class="copy-btn">Copy</button>
       </div>
-      <div class="aside-field border-bot">
-        <h3 class="aside-head">
-          <img src="https://img.icons8.com/ios/32/747c87/hint-filled.png" class="icon">Use the Button Widget
-        </h3>
-        <p>The widget embeds the buttons for sharing the job for submitting a resume on your website.
-        </p>
-        <input type="text" name="name" class="link-input" placeholder='<script type="totally-cool/awesome"'>
-        <button class="copy-btn">Copy</button>
-      </div>
-      <div class="aside-field">
-        <h3 class="aside-head">
-          <img src="https://img.icons8.com/ios-glyphs/32/747c87/upload-2.png" class="icon">Upload Resumes by Email
-        </h3>
-        <p>You can automatically upload multiple resumes to this job by emailing the address below.
-        </p>
-        <input type="text" name="name" class="email-input" placeholder="masonrf1@gmail.com">
+      <div class="aside-field-container">
+        <div class="aside-field border-bot link-job">
+          <h3 class="aside-head">
+            <img src="https://img.icons8.com/small/32/747c87/globe.png" class="icon">Link to this Job
+          </h3>
+          <p>Lorem ipsum dolor sit arnet, consectetur adipis cing elit. Integer mollis neque eget vestibpend.
+          </p>
+          <input type="text" name="name" class="link-input" placeholder="www.getmeajobrightmeow.com">
+          <button class="copy-btn">Copy</button>
+        </div>
+        <div class="aside-field border-bot">
+          <h3 class="aside-head">
+            <img src="https://img.icons8.com/ios/32/747c87/hint-filled.png" class="icon">Use the Button Widget
+          </h3>
+          <p>The widget embeds the buttons for sharing the job for submitting a resume on your website.
+          </p>
+          <input type="text" name="name" class="link-input" placeholder='<script type="totally-cool/awesome"'>
+          <button class="copy-btn">Copy</button>
+        </div>
+        <div class="aside-field email-resume">
+          <h3 class="aside-head">
+            <img src="https://img.icons8.com/ios-glyphs/32/747c87/upload-2.png" class="icon">Upload Resumes by Email
+          </h3>
+          <p>You can automatically upload multiple resumes to this job by emailing the address below.
+          </p>
+          <input type="text" name="name" class="email-input" placeholder="masonrf1@gmail.com">
+        </div>
       </div>
     </aside> 
   <script>

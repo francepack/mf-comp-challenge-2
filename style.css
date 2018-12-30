@@ -336,7 +336,8 @@ header {
 
 .header-nav li {
   display: inline-block;
-  padding: 0px 16px 5px 16px;
+  padding: 0px 0px 5px 16px;
+  width: 13%;
 }
 
 .header-nav li:hover h4 {
@@ -363,6 +364,7 @@ header {
   align-content: space-around;
   flex-wrap: wrap;
   justify-content: space-around;
+  width: 50%;
 }
 
 .figure-box2 {
@@ -370,18 +372,19 @@ header {
   align-content: space-around;
   flex-wrap: wrap;
   justify-content: space-around;
+  width: 50%;
 }
 
 .chart-container1 {
   border: solid black 1px;
   height: 200px;
-  width: 500px;
+  width: 100%;
 }
 
 .chart-container2 {
   border: solid black 1px;
   height: 200px;
-  width: 450px;
+  width: 100%;
 }
 
 .figures button {
@@ -431,7 +434,7 @@ header {
 table {
   background-color: #FFFFFF;
   color: #9fa9b3;
-  margin: 40px;
+  width: 94%;
 }
 
 .table-top-row {
@@ -463,6 +466,10 @@ table {
   cursor: pointer;
 }
 
+.table-area {
+  padding: 40px;
+}
+
 td .icon {
   margin-right: 4px;
 }
@@ -490,11 +497,17 @@ table th {
 table td {
   font-size: 75%;
   font-weight: 600;
-  padding: 20px 16px 0px 0px;
+  padding: 20px 20px 0px 0px;
 }
 
 table {
   margin-bottom: 40px;
+  width: 100%;
+}
+
+table p {
+  margin: 0;
+  max-width: 895px;
 }
 
 .hire-img {
@@ -578,11 +591,11 @@ table {
   width: 100%;
 }
 
-.border-adjust-fat:after {
+.border-adjust-big:after {
   padding: 27px;
 }
 
-.border-adjust-slight:after {
+.border-adjust-small:after {
   padding: 15px;
 }
 
@@ -634,4 +647,276 @@ table {
 .email-input {
   text-indent: 4px;
   width: 100%;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1286px) {
+  .border-adjust-big:after {
+  padding: 36px;
+  }
+  table p {
+    padding-bottom: 1px;
+  }
+}
+
+@media screen and (max-width: 1142px) {
+  table p {
+    padding-bottom: 0;
+  }
+  .border-adjust-big:after {
+    padding: 44px;
+  }
+}
+
+@media screen and (max-width: 1063px) {
+  body {
+    display: block;
+  }
+  .user-img {
+    height: 35px;
+    width: 35px;
+    margin-top: 10px;
+  }
+  .dropbtn {
+    position: relative;
+    bottom: 14px;
+    left: 1px;
+  }
+  .side-nav section {
+    display: block;
+    padding: 0 0 0 10px;
+    margin: 0;
+  }
+  .drop-content {
+    left: 0px;
+    font-size: 70%;
+    width: 110px;
+  }
+  .side-nav ul {
+    margin: 0;
+  }
+  .side-nav li {
+    display: inline-block;
+    font-size: 50%;
+    padding: 4px;
+    width: 16%;
+  }
+  .list-head {
+    max-width: 90px;
+  }
+  .side-nav .icon {
+    height: 12px;
+    width: 12px;
+  }
+  .categories-nav {
+    border-bottom: solid 2px #2f384b;
+  }
+  .check-box {
+    top: 0px;
+  }
+  header {
+    height: 90px;
+  }
+  .search-input-row {
+  }
+  .header-nav {
+    margin: 10px 0px 0px 0px;
+    bottom: 6px;
+  }
+  .header-nav li {
+    padding-bottom: 0;
+  }
+  .figures {
+    padding-top: 20px;
+  }
+  .figures button {
+    margin-top: 20px;
+  }
+  table {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  table p {
+    padding-bottom: 0;
+  }
+  .border-adjust-big:after {
+    padding: 27px;
+  }
+  .aside-nav {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .aside-field-container {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40px;
+    padding: 0;
+    width: 93.5%;
+  }
+  .aside-field {
+    border-bottom: solid #dce1e6 1px;
+    padding: 0 4px 0 20px;
+  }
+  .aside-field p{
+    height: 40px;
+  }
+  .border-bot {
+    border-right: solid #dce1e6 1px;
+  }
+  .link-job {
+    padding-left: 0;
+  }
+  .email-resume {
+    padding-right: 0;
+  }
+  .email-input {
+    width: 92%;
+  }
+  .social-box {
+    display: inline-block;
+    width: 100%;
+  }
+  .social-box span {
+    right: 25px;
+  }
+  .social-btn {
+    text-align: center;
+    width: 30%;
+    margin-left: 0px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+  .facebook {
+    margin-left: 40px;
+    margin-top: 10px;
+    position: relative;
+    top: 3px;
+  }
+}
+@media screen and (max-width: 852px) {
+  .border-adjust-big:after {
+    padding: 36px;
+  }
+  table p {
+    padding-bottom: 1px;
+  }
+  .aside-head {
+    font-size: 85%;
+  }
+  .link-input {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 708px) {
+  .main-nav,
+  .admin-nav,
+  .categories-nav {
+    visibility: hidden;
+    height: 0;
+    border: 0;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  .header-nav li {
+    font-size: 85%;
+  }
+  .figures {
+    display: block;
+    padding-bottom: 0;
+  }
+  .figure-box1,
+  .figure-box2 {
+    width: 88.5%;
+    margin-bottom: 0;
+  }
+  .icon {
+    top: 1px;
+    height: 12px;
+    width: 12px;
+    margin-right: 3px;
+  }
+  .big {
+    height: 18px;
+    width: 18px;
+    margin-top: 12px;
+    margin-right: 0;
+  }
+  .adjust {
+    left: -2px;
+    top: 2px;
+  }
+  .tiny {
+    left: 1px;
+    top: 3px;
+    height: 10px;
+    width: 10px;
+  }
+  .search-input-row i {
+    height: 46px;
+  }
+  .search-input-row input {
+    font-size: 80%;
+  }
+  .dot {
+    margin-right: 2px;
+  }
+  .table-area {
+    padding-bottom: 10px;
+  }
+  .big-tr p {
+    height: 121px;
+  }
+  .border-adjust-big:after {
+    padding: 62px;
+  }
+  .aside-field-container {
+    display: block;
+    margin-left: 40px;
+  }
+  .aside-field {
+    margin-bottom: 0;
+    padding: 0;
+    border-right: none;
+  }
+  .aside-nav input {
+    margin-bottom: 12px;
+  }
+  .link-input {
+    width: 80%;
+  }
+  .email-input {
+    width: 100%;
+  }
+  .aside-field p {
+    height: 20px;
+  }
+  .facebook {
+    top: 0;
+  }
+  .facebook span {
+    bottom: 1px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .social-btn {
+    display: block;
+    height: 50px;
+    margin: 30px 0px 20px 40px;
+    width: 85%;
+  }
+  .title-buttons {
+    display: none;
+  }
+  .header-nav:first-child {
+    padding-left: 20px;
+    /*display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr
+    padding-left: 8px;*/
+  }
+  .header-nav li {
+    font-size: 70%;
+    padding-left: 2px;
+  }
 }
