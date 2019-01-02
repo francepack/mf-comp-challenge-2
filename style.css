@@ -692,8 +692,10 @@ table p {
   }
   .dropbtn {
     position: relative;
-    bottom: 14px;
-    left: 1px;
+    bottom: 10px;
+    left: -11px;
+  }
+  .user-nav label {
   }
   .side-nav section {
     display: block;
