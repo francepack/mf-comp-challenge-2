@@ -358,7 +358,6 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 300px;
-  /*padding-top: 30px;*/
 }
 
 .figure-box {
@@ -371,10 +370,11 @@ header {
 .three-circles {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  margin: 10px;
 }
 
 .circle {
-  margin: 10px;
+  margin: 10px 20px;
 }
 
 .circle-chart__circle {
@@ -387,6 +387,11 @@ header {
   animation: circle-chart-appear 2s forwards;
   opacity: 0;
   transform: translateY(0.3em);
+}
+
+.circle-chart__percent,
+.circle-chart__subline {
+  fill: #8a8d99;
 }
 
 @keyframes circle-chart-fill {
@@ -907,6 +912,9 @@ table p {
   }
   .aside-field p {
     height: 20px;
+  }
+  .social-btn span {
+    font-size: 90%;
   }
   .facebook {
     top: 0;
