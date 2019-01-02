@@ -10,7 +10,7 @@ body {
   display: grid;
   font-family: 'Open Sans', sans-serif;
   grid-template-columns: 180px auto 254px;
-  grid-template-rows: 220px 400px auto;
+  grid-template-rows: 220px 350px auto;
   margin: 0px;
 }
 
@@ -358,7 +358,7 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 300px;
-  padding-top: 30px;
+  /*padding-top: 30px;*/
 }
 
 .figure-box {
@@ -949,8 +949,6 @@ table p {
     display: flex;
     justify-content: space-around;
     text-align: center;
-  }
-  table th {
   }
   .big-tr p {
     height: 100%;
